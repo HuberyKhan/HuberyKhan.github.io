@@ -5,16 +5,19 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://huberykhan.com">
   <title>Hubery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Hubery Khan的个人博客">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hubery">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://huberykhan.com/index.html">
 <meta property="og:site_name" content="Hubery">
+<meta property="og:description" content="Hubery Khan的个人博客">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hubery">
+<meta name="twitter:description" content="Hubery Khan的个人博客">
   
     <link rel="alternative" href="/atom.xml" title="Hubery" type="application/atom+xml">
   
@@ -81,8 +84,6 @@
 		        
 					<a class="weibo" target="_blank" href="https://weibo.com/u/6036398120/home?wvr=5" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
@@ -122,8 +123,6 @@
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/u/6036398120/home?wvr=5" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
@@ -152,12 +151,43 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Hexo常见问题及解决" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Problems" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/12/Problems/">Hexo使用过程中的问题</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/12/Problems/" class="archive-article-date">
+  	<time datetime="2019-07-12T07:54:23.314Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-12</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1.git clone命令</p>
+<p>笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line"> </span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line"> </span><br><span class="line">fatal: early EOF</span><br><span class="line"> </span><br><span class="line">fatal: index-pack failed</span><br><span class="line">--------------------- </span><br><span class="line">作者：Jane.zhong </span><br><span class="line">来源：CSDN </span><br><span class="line">原文：https://blog.csdn.net/dzhongjie/article/details/81152983</span><br></pre></td></tr></table></figure>
+
+<p>解决办法：  </p>
+<p><code>git config --global http.postBuffer 524288000</code></p>
+<p> 这样已经配置好了，如果你不确定，可以根据以下命令查看postBuffer。</p>
+<p> <code>git config --list</code> </p>
+<p> <img src="https://img-blog.csdn.net/20180722113150543?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2R6aG9uZ2ppZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="example"></p>
+<hr>
+<p>2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Please tell me who you are.</span><br><span class="line">Run</span><br><span class="line"></span><br><span class="line">  git config --global user.email &quot;you@example.com&quot;</span><br><span class="line">  git config --global user.name &quot;Your Name&quot;</span><br><span class="line"></span><br><span class="line">to set your account&apos;s default identity.Omit --global to set the identity only in this repository.</span><br><span class="line"></span><br><span class="line">fatal: empty indent  not allowed</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.thecreativedev.com/solution-github-please-tell-me-who-you-are-error/" target="_blank" rel="noopener">The solutions I found to this problem is I have Run the following command to set my user and email </a> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;test@youremail.com&quot; </span><br><span class="line">git config --global user.name &quot;Bhumi Shah&quot;</span><br></pre></td></tr></table></figure>
+
+
       
 
       
@@ -165,11 +195,171 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Problems//" class="article-tag-list-link color4">Problems</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/12/Problems/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-MarkDown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/12/MarkDown/">MarkDown的基本用法</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/12/MarkDown/" class="archive-article-date">
+  	<time datetime="2019-07-12T07:01:27.303Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>标题：</p>
+<h1 id="This-is-how-to-use-markdown-to-white-a-title"><a href="#This-is-how-to-use-markdown-to-white-a-title" class="headerlink" title="This is how to use markdown to white a title."></a>This is how to use markdown to white a title.</h1><h2 id="This-is-how-to-use-markdown-to-white-a-title-1"><a href="#This-is-how-to-use-markdown-to-white-a-title-1" class="headerlink" title="This is how to use markdown to white a title."></a>This is how to use markdown to white a title.</h2><h3 id="This-is-how-to-use-markdown-to-white-a-title-2"><a href="#This-is-how-to-use-markdown-to-white-a-title-2" class="headerlink" title="This is how to use markdown to white a title."></a>This is how to use markdown to white a title.</h3><h4 id="This-is-how-to-use-markdown-to-white-a-title-3"><a href="#This-is-how-to-use-markdown-to-white-a-title-3" class="headerlink" title="This is how to use markdown to white a title."></a>This is how to use markdown to white a title.</h4><h5 id="This-is-how-to-use-markdown-to-white-a-title-4"><a href="#This-is-how-to-use-markdown-to-white-a-title-4" class="headerlink" title="This is how to use markdown to white a title."></a>This is how to use markdown to white a title.</h5><h6 id="This-is-how-to-use-markdown-to-white-a-title-5"><a href="#This-is-how-to-use-markdown-to-white-a-title-5" class="headerlink" title="This is how to use markdown to white a title."></a>This is how to use markdown to white a title.</h6></li>
+<li><p>链接 :<br><a href="https://www.smzdm.com/list/" target="_blank" rel="noopener">什么值得买</a></p>
+</li>
+<li><p>加粗 :</p>
+</li>
+<li><p><em>这是加粗的字*</em></p>
+</li>
+<li><p>斜体字 :</p>
+</li>
+<li><p>这是斜体的字*</p>
+</li>
+<li><p>高亮 :<br><code>这是高亮的字</code></p>
+</li>
+<li><p>段落 : 段落之间空一行</p>
+</li>
+<li><p>换行符 : 一行结束时输入两个空格</p>
+</li>
+<li><p>内嵌代码 : <code>alert(&#39;Hello World&#39;);</code></p>
+</li>
+</ul>
+<p>*分割线</p>
+<hr>
+<p><del>* 删除线</del></p>
+<ul>
+<li><p>代码块</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">       System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>图片<br><img src="http://photocdn.sohu.com/20140408/Img397875426.jpg" alt="picture" title="mountain"> </p>
+</li>
+<li><p>图片链接</p>
+</li>
+</ul>
+<p><a href="https://github.com/SeayXu" title="SeayXu" target="_blank" rel="noopener"><img src="https://help.github.com/assets/images/site/favicon.ico" alt="Github" title="Seay"></a></p>
+<ul>
+<li><p>无序列表</p>
+<ul>
+<li>二级条目1<ul>
+<li>二级条目2</li>
+<li>三级条目</li>
+</ul>
+<ul>
+<li>三级条目2</li>
+</ul>
+<ul>
+<li>三级条目3</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>有序列表</p>
+</li>
+</ul>
+<ol>
+<li>条目一</li>
+<li>条目二</li>
+<li>条目三</li>
+</ol>
+<ul>
+<li>引用<blockquote>
+<p>这是一段引用，其中包含<strong>BIG</strong>、<em>斜</em>、<del>删除</del>。</p>
+</blockquote>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/12/Hexo常见问题及解决/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/07/12/MarkDown/">展开全文 >></a>
         </p>
       
 
@@ -365,6 +555,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
