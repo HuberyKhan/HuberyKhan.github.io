@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://huberykhan.com">
   <title>Hexo使用过程中的问题 | Hubery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题   1234567891011error: RPC failed; curl 18 transfer closed with outstanding read data remaining fatal: The remote end hung up unexpectedly fatal:">
+  <meta name="description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo使用过程中的问题">
 <meta property="og:url" content="http://huberykhan.com/2019/07/12/Hexo使用过程中的问题/index.html">
 <meta property="og:site_name" content="Hubery">
-<meta property="og:description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题   1234567891011error: RPC failed; curl 18 transfer closed with outstanding read data remaining fatal: The remote end hung up unexpectedly fatal:">
+<meta property="og:description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://img-blog.csdn.net/20180722113150543?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2R6aG9uZ2ppZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2019-07-12T11:31:16.212Z">
+<meta property="og:updated_time" content="2019-07-12T13:53:56.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用过程中的问题">
-<meta name="twitter:description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题   1234567891011error: RPC failed; curl 18 transfer closed with outstanding read data remaining fatal: The remote end hung up unexpectedly fatal:">
+<meta name="twitter:description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20180722113150543?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2R6aG9uZ2ppZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
   
     <link rel="alternative" href="/atom.xml" title="Hubery" type="application/atom+xml">
@@ -183,9 +183,9 @@
       
         <p>1.git clone命令</p>
 <p>笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line"> </span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line"> </span><br><span class="line">fatal: early EOF</span><br><span class="line"> </span><br><span class="line">fatal: index-pack failed</span><br><span class="line">--------------------- </span><br><span class="line">作者：Jane.zhong </span><br><span class="line">来源：CSDN </span><br><span class="line">原文：https://blog.csdn.net/dzhongjie/article/details/81152983</span><br></pre></td></tr></table></figure>
-
 <a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line"> </span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line"> </span><br><span class="line">fatal: early EOF</span><br><span class="line"> </span><br><span class="line">fatal: index-pack failed</span><br><span class="line">--------------------- </span><br><span class="line">作者：Jane.zhong </span><br><span class="line">来源：CSDN </span><br><span class="line">原文：https://blog.csdn.net/dzhongjie/article/details/81152983</span><br></pre></td></tr></table></figure>
 
 <p>解决办法：  </p>
 <p><code>git config --global http.postBuffer 524288000</code></p>
