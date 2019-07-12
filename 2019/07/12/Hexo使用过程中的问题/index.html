@@ -17,7 +17,7 @@
 <meta property="og:description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题   1234567891011error: RPC failed; curl 18 transfer closed with outstanding read data remaining fatal: The remote end hung up unexpectedly fatal:">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://img-blog.csdn.net/20180722113150543?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2R6aG9uZ2ppZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2019-07-12T07:57:54.658Z">
+<meta property="og:updated_time" content="2019-07-12T11:31:16.212Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用过程中的问题">
 <meta name="twitter:description" content="1.git clone命令 笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题   1234567891011error: RPC failed; curl 18 transfer closed with outstanding read data remaining fatal: The remote end hung up unexpectedly fatal:">
@@ -26,7 +26,7 @@
     <link rel="alternative" href="/atom.xml" title="Hubery" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -50,9 +50,9 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="./图标2.png" class="js-avatar">
+			<img src="/img/图标2.png" class="js-avatar show">
 		</a>
-		<hgroup>
+                                     <hgroup>
 		  <h1 class="header-author"><a href="/">Hubery Khan</a></h1>
 		</hgroup>
 		
@@ -84,15 +84,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qxblmmbb1314/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/32830770/#/favlist?fid=2045150" title="bilibili"><i class="icon-bilibili"></i></a>
+		        
 					<a class="github" target="_blank" href="https://github.com/HuberyKhan/HuberyKhan.github.io" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="https://weibo.com/u/6036398120/home?wvr=5" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qxblmmbb1314/activities" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
-					<a class="jianshu" target="_blank" href="https://www.jianshu.com/writer#/notebooks/8084024/notes/34114098" title="jianshu"><i class="icon-jianshu"></i></a>
-		        
-					<a class="bilibili" target="_blank" href="https://space.bilibili.com/32830770/#/favlist?fid=2045150" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 					<a class="twitter" target="_blank" href="https://twitter.com" title="twitter"><i class="icon-twitter"></i></a>
 		        
@@ -112,7 +110,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="./图标2.png" class="js-avatar">
+				<img src="/img/图标2.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Hubery Khan</h1>
@@ -129,15 +127,13 @@
 			<nav class="header-nav">
 				<div class="social">
 					
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qxblmmbb1314/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/32830770/#/favlist?fid=2045150" title="bilibili"><i class="icon-bilibili"></i></a>
+			        
 						<a class="github" target="_blank" href="https://github.com/HuberyKhan/HuberyKhan.github.io" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/u/6036398120/home?wvr=5" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qxblmmbb1314/activities" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
-						<a class="jianshu" target="_blank" href="https://www.jianshu.com/writer#/notebooks/8084024/notes/34114098" title="jianshu"><i class="icon-jianshu"></i></a>
-			        
-						<a class="bilibili" target="_blank" href="https://space.bilibili.com/32830770/#/favlist?fid=2045150" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 						<a class="twitter" target="_blank" href="https://twitter.com" title="twitter"><i class="icon-twitter"></i></a>
 			        
@@ -189,6 +185,8 @@
 <p>笔者最近在使用git clone命令从github克隆源码到电脑时出现了以下问题  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 18 transfer closed with outstanding read data remaining</span><br><span class="line"> </span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line"> </span><br><span class="line">fatal: early EOF</span><br><span class="line"> </span><br><span class="line">fatal: index-pack failed</span><br><span class="line">--------------------- </span><br><span class="line">作者：Jane.zhong </span><br><span class="line">来源：CSDN </span><br><span class="line">原文：https://blog.csdn.net/dzhongjie/article/details/81152983</span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
+
 <p>解决办法：  </p>
 <p><code>git config --global http.postBuffer 524288000</code></p>
 <p> 这样已经配置好了，如果你不确定，可以根据以下命令查看postBuffer。</p>
@@ -201,6 +199,26 @@
 <p><a href="https://www.thecreativedev.com/solution-github-please-tell-me-who-you-are-error/" target="_blank" rel="noopener">The solutions I found to this problem is I have Run the following command to set my user and email </a> </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;test@youremail.com&quot; </span><br><span class="line">git config --global user.name &quot;Bhumi Shah&quot;</span><br></pre></td></tr></table></figure>
 
+<hr>
+<p>3.解决头像的问题    </p>
+<p>直接修改layout/_partial/left-col.ejs的第六行和第八行为：  </p>
+<p><code>&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot;&gt;</code><br> <code>&lt;img src=&quot;&lt;%=theme.avatar%&gt;&quot; class=&quot;js-avatar show&quot; style=&quot;width: 100%;height: 100%;opacity: 1;&quot;&gt;</code>     </p>
+<p> 并且把theme文件夹中的_config.yml中把头像地址改为 </p>
+<p> <code>avatar: &quot;/img/头像.png&quot;</code>  </p>
+<p> 同时把头像放入/source/img</p>
+<p><em>实践过程中第八行不需要修改，否则主页和随笔按钮处会变成头像。</em></p>
+<hr>
+<p>4.文章资源文件夹</p>
+<p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，那最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于<code>![](/images/image.jpg)</code>的方法访问它们。</p>
+<p>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。</p>
+<p>当资源文件管理功能打开后，Hexo将会在你每一次通过 <code>hexo new [layout] &lt;title&gt;</code>命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。</p>
+<p>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在Hexo 2时代，社区创建了很多插件来解决这个问题。但是，随着Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>比如说：当你打开文章资源文件夹功能后，你把一个 example.jpg 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法<code>![](/example.jpg)</code>，它将 不会 出现在首页上。（但是它会在文章中按你期待的方式工作）</p>
+<p>正确的引用图片方式是使用下列的标签插件而不是 markdown ：</p>
+<p><code></code></p>
+<p>通过这种方式，图片将会同时出现在文章和主页以及归档页中。</p>
 
       
 
@@ -294,6 +312,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/07/12/Hexo配置个性域名/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hexo配置个性域名
+        
+      </div>
+    </a>
   
   
     <a href="/2019/07/12/MarkDown的基本用法/" id="article-nav-older" class="article-nav-link-wrap">
@@ -442,6 +469,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Thoughts</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -505,6 +536,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="https://www.youtube.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>YouTube</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.jianshu.com/writer#/notebooks/8084024/notes/34114098" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>JianShu</a>
             </li>
           
             <li class="search-li">
